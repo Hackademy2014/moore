@@ -1,0 +1,463 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		75F278F8192689670082A7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F7192689670082A7A9 /* Foundation.framework */; };
+		75F278FA192689670082A7A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F9192689670082A7A9 /* CoreGraphics.framework */; };
+		75F278FC192689670082A7A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278FB192689670082A7A9 /* UIKit.framework */; };
+		75F27902192689670082A7A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75F27900192689670082A7A9 /* InfoPlist.strings */; };
+		75F27904192689670082A7A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F27903192689670082A7A9 /* main.m */; };
+		75F27908192689670082A7A9 /* MCAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F27907192689670082A7A9 /* MCAppDelegate.m */; };
+		75F2790A192689680082A7A9 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75F27909192689680082A7A9 /* Images.xcassets */; };
+		75F27911192689680082A7A9 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F27910192689680082A7A9 /* XCTest.framework */; };
+		75F27912192689680082A7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F7192689670082A7A9 /* Foundation.framework */; };
+		75F27913192689680082A7A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278FB192689670082A7A9 /* UIKit.framework */; };
+		75F2791B192689680082A7A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 75F27919192689680082A7A9 /* InfoPlist.strings */; };
+		75F2791D192689680082A7A9 /* Moore_CenterTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2791C192689680082A7A9 /* Moore_CenterTests.m */; };
+		75F27927192689A00082A7A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 75F27926192689A00082A7A9 /* Main.storyboard */; };
+		75F2792A19268BAD0082A7A9 /* MCMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 75F2792919268BAD0082A7A9 /* MCMainViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		75F27914192689680082A7A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 75F278EC192689670082A7A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 75F278F3192689670082A7A9;
+			remoteInfo = "Moore Center";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		75F278F4192689670082A7A9 /* Moore Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moore Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F278F7192689670082A7A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		75F278F9192689670082A7A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		75F278FB192689670082A7A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		75F278FF192689670082A7A9 /* Moore Center-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moore Center-Info.plist"; sourceTree = "<group>"; };
+		75F27901192689670082A7A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75F27903192689670082A7A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		75F27905192689670082A7A9 /* Moore Center-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Moore Center-Prefix.pch"; sourceTree = "<group>"; };
+		75F27906192689670082A7A9 /* MCAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MCAppDelegate.h; sourceTree = "<group>"; };
+		75F27907192689670082A7A9 /* MCAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MCAppDelegate.m; sourceTree = "<group>"; };
+		75F27909192689680082A7A9 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		75F2790F192689680082A7A9 /* Moore CenterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Moore CenterTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		75F27910192689680082A7A9 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		75F27918192689680082A7A9 /* Moore CenterTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Moore CenterTests-Info.plist"; sourceTree = "<group>"; };
+		75F2791A192689680082A7A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		75F2791C192689680082A7A9 /* Moore_CenterTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Moore_CenterTests.m; sourceTree = "<group>"; };
+		75F27926192689A00082A7A9 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		75F2792819268BAD0082A7A9 /* MCMainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCMainViewController.h; sourceTree = "<group>"; };
+		75F2792919268BAD0082A7A9 /* MCMainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCMainViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		75F278F1192689670082A7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F278FA192689670082A7A9 /* CoreGraphics.framework in Frameworks */,
+				75F278FC192689670082A7A9 /* UIKit.framework in Frameworks */,
+				75F278F8192689670082A7A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F2790C192689680082A7A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F27911192689680082A7A9 /* XCTest.framework in Frameworks */,
+				75F27913192689680082A7A9 /* UIKit.framework in Frameworks */,
+				75F27912192689680082A7A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		75F278EB192689670082A7A9 = {
+			isa = PBXGroup;
+			children = (
+				75F278FD192689670082A7A9 /* Moore Center */,
+				75F27916192689680082A7A9 /* Moore CenterTests */,
+				75F278F6192689670082A7A9 /* Frameworks */,
+				75F278F5192689670082A7A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		75F278F5192689670082A7A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				75F278F4192689670082A7A9 /* Moore Center.app */,
+				75F2790F192689680082A7A9 /* Moore CenterTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		75F278F6192689670082A7A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				75F278F7192689670082A7A9 /* Foundation.framework */,
+				75F278F9192689670082A7A9 /* CoreGraphics.framework */,
+				75F278FB192689670082A7A9 /* UIKit.framework */,
+				75F27910192689680082A7A9 /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		75F278FD192689670082A7A9 /* Moore Center */ = {
+			isa = PBXGroup;
+			children = (
+				75F2792819268BAD0082A7A9 /* MCMainViewController.h */,
+				75F2792919268BAD0082A7A9 /* MCMainViewController.m */,
+				75F27906192689670082A7A9 /* MCAppDelegate.h */,
+				75F27907192689670082A7A9 /* MCAppDelegate.m */,
+				75F27909192689680082A7A9 /* Images.xcassets */,
+				75F27926192689A00082A7A9 /* Main.storyboard */,
+				75F278FE192689670082A7A9 /* Supporting Files */,
+			);
+			path = "Moore Center";
+			sourceTree = "<group>";
+		};
+		75F278FE192689670082A7A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75F278FF192689670082A7A9 /* Moore Center-Info.plist */,
+				75F27900192689670082A7A9 /* InfoPlist.strings */,
+				75F27903192689670082A7A9 /* main.m */,
+				75F27905192689670082A7A9 /* Moore Center-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		75F27916192689680082A7A9 /* Moore CenterTests */ = {
+			isa = PBXGroup;
+			children = (
+				75F2791C192689680082A7A9 /* Moore_CenterTests.m */,
+				75F27917192689680082A7A9 /* Supporting Files */,
+			);
+			path = "Moore CenterTests";
+			sourceTree = "<group>";
+		};
+		75F27917192689680082A7A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				75F27918192689680082A7A9 /* Moore CenterTests-Info.plist */,
+				75F27919192689680082A7A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		75F278F3192689670082A7A9 /* Moore Center */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F27920192689680082A7A9 /* Build configuration list for PBXNativeTarget "Moore Center" */;
+			buildPhases = (
+				75F278F0192689670082A7A9 /* Sources */,
+				75F278F1192689670082A7A9 /* Frameworks */,
+				75F278F2192689670082A7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Moore Center";
+			productName = "Moore Center";
+			productReference = 75F278F4192689670082A7A9 /* Moore Center.app */;
+			productType = "com.apple.product-type.application";
+		};
+		75F2790E192689680082A7A9 /* Moore CenterTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 75F27923192689680082A7A9 /* Build configuration list for PBXNativeTarget "Moore CenterTests" */;
+			buildPhases = (
+				75F2790B192689680082A7A9 /* Sources */,
+				75F2790C192689680082A7A9 /* Frameworks */,
+				75F2790D192689680082A7A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				75F27915192689680082A7A9 /* PBXTargetDependency */,
+			);
+			name = "Moore CenterTests";
+			productName = "Moore CenterTests";
+			productReference = 75F2790F192689680082A7A9 /* Moore CenterTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		75F278EC192689670082A7A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = MC;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "Moore Center";
+				TargetAttributes = {
+					75F2790E192689680082A7A9 = {
+						TestTargetID = 75F278F3192689670082A7A9;
+					};
+				};
+			};
+			buildConfigurationList = 75F278EF192689670082A7A9 /* Build configuration list for PBXProject "Moore Center" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 75F278EB192689670082A7A9;
+			productRefGroup = 75F278F5192689670082A7A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				75F278F3192689670082A7A9 /* Moore Center */,
+				75F2790E192689680082A7A9 /* Moore CenterTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		75F278F2192689670082A7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F27927192689A00082A7A9 /* Main.storyboard in Resources */,
+				75F27902192689670082A7A9 /* InfoPlist.strings in Resources */,
+				75F2790A192689680082A7A9 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F2790D192689680082A7A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F2791B192689680082A7A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		75F278F0192689670082A7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F2792A19268BAD0082A7A9 /* MCMainViewController.m in Sources */,
+				75F27908192689670082A7A9 /* MCAppDelegate.m in Sources */,
+				75F27904192689670082A7A9 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		75F2790B192689680082A7A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				75F2791D192689680082A7A9 /* Moore_CenterTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		75F27915192689680082A7A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 75F278F3192689670082A7A9 /* Moore Center */;
+			targetProxy = 75F27914192689680082A7A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		75F27900192689670082A7A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F27901192689670082A7A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		75F27919192689680082A7A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				75F2791A192689680082A7A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		75F2791E192689680082A7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		75F2791F192689680082A7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		75F27921192689680082A7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moore Center/Moore Center-Prefix.pch";
+				INFOPLIST_FILE = "Moore Center/Moore Center-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		75F27922192689680082A7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moore Center/Moore Center-Prefix.pch";
+				INFOPLIST_FILE = "Moore Center/Moore Center-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		75F27924192689680082A7A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Moore Center.app/Moore Center";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moore Center/Moore Center-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Moore CenterTests/Moore CenterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		75F27925192689680082A7A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Moore Center.app/Moore Center";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Moore Center/Moore Center-Prefix.pch";
+				INFOPLIST_FILE = "Moore CenterTests/Moore CenterTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		75F278EF192689670082A7A9 /* Build configuration list for PBXProject "Moore Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F2791E192689680082A7A9 /* Debug */,
+				75F2791F192689680082A7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		75F27920192689680082A7A9 /* Build configuration list for PBXNativeTarget "Moore Center" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F27921192689680082A7A9 /* Debug */,
+				75F27922192689680082A7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		75F27923192689680082A7A9 /* Build configuration list for PBXNativeTarget "Moore CenterTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				75F27924192689680082A7A9 /* Debug */,
+				75F27925192689680082A7A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 75F278EC192689670082A7A9 /* Project object */;
+}
