@@ -7,6 +7,7 @@
 //
 
 #import "MCNotifications.h"
+#import "MCNotificationCellTableViewCell.h"
 
 @interface MCNotifications ()
 
@@ -30,6 +31,12 @@
     
     [self.navigationController setNavigationBarHidden:NO];
     self.navigationController.navigationBar.backItem.title = @"Home";
+    
+    // Set delegate
+    // Set data source
+    
+    self.notifTable.delegate = self;
+    self.notifTable.dataSource = self;
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -44,6 +51,29 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 1;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    /*static NSString *CellIdentifier = @"cellidentifier";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cellidentifier"];
+    
+    if (cell == nil) {
+        cell = [[UITableViewCell alloc]initWithStyle:UITableViewCellStyleSubtitle reuseIdentifier:CellIdentifier];
+    }
+    cell.textLabel.text = @"Test";    //etc.
+    cell.detailTextLabel.text = @"Today"; */
+    
+    static NSString *CellIdentifier = @"Cell";
+    MCNotificationCellTableViewCell *cell = (MCNotificationCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    
+    [cell.title setText:@"Test"];
+    
+    return cell;
 }
 
 /*

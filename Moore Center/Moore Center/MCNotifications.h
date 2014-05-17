@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface MCNotifications : UIViewController
+@interface MCNotifications : UIViewController <UITableViewDelegate, UITableViewDataSource>
+
+@property (strong, nonatomic) IBOutlet UITableView* notifTable;
 
 @end
