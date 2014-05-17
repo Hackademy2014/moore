@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Moore Center-->
+        <!--Main View Controller - Moore Center-->
         <scene sceneID="wgs-Mf-eIl">
             <objects>
-                <viewController id="9uY-x2-Cds" sceneMemberID="viewController">
+                <viewController id="9uY-x2-Cds" customClass="MCMainViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="0GH-0P-DdY"/>
                         <viewControllerLayoutGuide type="bottom" id="Bh7-fb-qPf"/>
@@ -16,51 +16,70 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t6B-Z2-xcM">
-                                <rect key="frame" x="137" y="97" width="37" height="30"/>
+                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MooreCenterLogoSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Fq-Ge-5L3">
+                                <rect key="frame" x="0.0" y="42" width="320" height="230"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-T1-7LS" customClass="MCCustButton">
+                                <rect key="frame" x="39" y="296" width="243" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Enter">
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                <state key="normal" title="Notifications">
+                                    <color key="titleColor" red="0.83673469387755106" green="0.76791258286254782" blue="0.045311007500855975" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <segue destination="mue-un-Q0t" kind="modal" modalTransitionStyle="crossDissolve" id="qNl-8z-7d9"/>
+                                    <segue destination="LO9-M5-arz" kind="push" id="HL6-Mx-4Jg"/>
                                 </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQI-w5-B8e" customClass="MCCustButton">
+                                <rect key="frame" x="39" y="374" width="243" height="47"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                <state key="normal" title="Settings">
+                                    <color key="titleColor" red="0.83673469389999999" green="0.76791258289999997" blue="0.0453110075" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Y16-T1-7LS" firstAttribute="width" secondItem="dQI-w5-B8e" secondAttribute="width" id="F2i-Sg-Xyc"/>
+                            <constraint firstItem="Y16-T1-7LS" firstAttribute="height" secondItem="dQI-w5-B8e" secondAttribute="height" id="loe-qg-9sj"/>
+                        </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Moore Center" id="Mz8-mk-SXi"/>
+                    <navigationItem key="navigationItem" title="Moore Center" id="Mz8-mk-SXi" colorLabel="IBBuiltInLabel-Blue"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                    <connections>
+                        <outlet property="notifBtn" destination="Y16-T1-7LS" id="MCG-9E-vSQ"/>
+                        <outlet property="settingsBtn" destination="dQI-w5-B8e" id="dKj-YF-Duq"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3o-nA-HY0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="544" y="-2"/>
         </scene>
-        <!--View Controller - Title-->
-        <scene sceneID="3yP-KN-qUA">
+        <!--Notifications - Notifications-->
+        <scene sceneID="oGt-Kx-M3Q">
             <objects>
-                <viewController id="mue-un-Q0t" sceneMemberID="viewController">
+                <viewController id="LO9-M5-arz" customClass="MCNotifications" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="3UX-nH-hys"/>
-                        <viewControllerLayoutGuide type="bottom" id="7hI-dJ-cso"/>
+                        <viewControllerLayoutGuide type="top" id="WQz-C8-SQC"/>
+                        <viewControllerLayoutGuide type="bottom" id="GUf-fP-Kzh"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="W3d-Ud-FJ4">
+                    <view key="view" contentMode="scaleToFill" id="Y83-XN-wkj">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="You are on the next page!" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8jh-i9-o6m">
-                                <rect key="frame" x="94" y="180" width="196" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Title" id="c4L-IG-eTf"/>
+                    <navigationItem key="navigationItem" title="Notifications" id="ogO-jb-yn8">
+                        <barButtonItem key="backBarButtonItem" title="Home" id="Xk6-MY-onE"/>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="fVY-Jd-EfB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ufu-EN-YNj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="939" y="-2"/>
+            <point key="canvasLocation" x="1098" y="-357"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="r7T-YV-x77">
@@ -81,6 +100,9 @@
             <point key="canvasLocation" x="18" y="-2"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="MooreCenterLogoSmall.png" width="234" height="176"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

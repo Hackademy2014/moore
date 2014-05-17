@@ -10,6 +10,7 @@
 
 @interface MCMainViewController : UIViewController
 
-
+@property (nonatomic, strong) IBOutlet UIButton* notifBtn;
+@property (nonatomic, strong) IBOutlet UIButton* settingsBtn;
 
 @end

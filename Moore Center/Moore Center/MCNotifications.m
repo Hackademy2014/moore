@@ -1,18 +1,18 @@
 //
-//  MCMainViewController.m
+//  MCNotifications.m
 //  Moore Center
 //
-//  Created by Hackademy on 5/16/14.
+//  Created by Hackademy on 5/17/14.
 //  Copyright (c) 2014 Moore Center. All rights reserved.
 //
 
-#import "MCMainViewController.h"
+#import "MCNotifications.h"
 
-@interface MCMainViewController ()
+@interface MCNotifications ()
 
 @end
 
-@implementation MCMainViewController
+@implementation MCNotifications
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -28,8 +28,8 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
-    [self.navigationController setNavigationBarHidden:YES];
-    
+    [self.navigationController setNavigationBarHidden:NO];
+    //UIBarButtonItem
 }
 
 - (void)didReceiveMemoryWarning
