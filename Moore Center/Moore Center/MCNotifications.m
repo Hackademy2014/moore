@@ -29,7 +29,15 @@
     // Do any additional setup after loading the view.
     
     [self.navigationController setNavigationBarHidden:NO];
-    //UIBarButtonItem
+    self.navigationController.navigationBar.backItem.title = @"Home";
+}
+
+- (void)viewWillAppear:(BOOL)animated
+{
+    [super viewWillAppear:animated];
+    
+    [self.navigationController setNavigationBarHidden:NO];
+    self.navigationController.navigationBar.backItem.title = @"Home";
 }
 
 - (void)didReceiveMemoryWarning
