@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7518ECC91926FBC1002E1573 /* MooreCenterSplash.png in Resources */ = {isa = PBXBuildFile; fileRef = 7518ECC81926FBC1002E1573 /* MooreCenterSplash.png */; };
+		7518ECCB192702EC002E1573 /* MooreCenterSplashSm.png in Resources */ = {isa = PBXBuildFile; fileRef = 7518ECCA192702EC002E1573 /* MooreCenterSplashSm.png */; };
 		75F278F8192689670082A7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F7192689670082A7A9 /* Foundation.framework */; };
 		75F278FA192689670082A7A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F9192689670082A7A9 /* CoreGraphics.framework */; };
 		75F278FC192689670082A7A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278FB192689670082A7A9 /* UIKit.framework */; };
@@ -34,6 +36,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7518ECC81926FBC1002E1573 /* MooreCenterSplash.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MooreCenterSplash.png; sourceTree = "<group>"; };
+		7518ECCA192702EC002E1573 /* MooreCenterSplashSm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MooreCenterSplashSm.png; sourceTree = "<group>"; };
 		75F278F4192689670082A7A9 /* Moore Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moore Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F278F7192689670082A7A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75F278F9192689670082A7A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -112,6 +116,8 @@
 		75F278FD192689670082A7A9 /* Moore Center */ = {
 			isa = PBXGroup;
 			children = (
+				7518ECC81926FBC1002E1573 /* MooreCenterSplash.png */,
+				7518ECCA192702EC002E1573 /* MooreCenterSplashSm.png */,
 				75F2792819268BAD0082A7A9 /* MCMainViewController.h */,
 				75F2792919268BAD0082A7A9 /* MCMainViewController.m */,
 				75F27906192689670082A7A9 /* MCAppDelegate.h */,
@@ -230,6 +236,8 @@
 			files = (
 				75F27927192689A00082A7A9 /* Main.storyboard in Resources */,
 				75F27902192689670082A7A9 /* InfoPlist.strings in Resources */,
+				7518ECC91926FBC1002E1573 /* MooreCenterSplash.png in Resources */,
+				7518ECCB192702EC002E1573 /* MooreCenterSplashSm.png in Resources */,
 				75F2790A192689680082A7A9 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +456,7 @@
 				75F27922192689680082A7A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		75F27923192689680082A7A9 /* Build configuration list for PBXNativeTarget "Moore CenterTests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +465,7 @@
 				75F27925192689680082A7A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

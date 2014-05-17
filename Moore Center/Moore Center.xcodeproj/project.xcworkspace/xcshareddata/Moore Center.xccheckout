@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>3ED95FA7-2FE5-4957-B189-E9B12A64FC1A</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Moore Center</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>018E7A47-C271-4746-AFEF-0D7B061B5380</key>
+		<string>https://github.com/Hackademy2014/moore.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Moore Center/Moore Center.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>018E7A47-C271-4746-AFEF-0D7B061B5380</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/Hackademy2014/moore.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>018E7A47-C271-4746-AFEF-0D7B061B5380</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>018E7A47-C271-4746-AFEF-0D7B061B5380</string>
+			<key>IDESourceControlWCCName</key>
+			<string>moore</string>
+		</dict>
+	</array>
+</dict>
+</plist>
