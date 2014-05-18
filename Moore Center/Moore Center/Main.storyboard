@@ -16,12 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="MooreCenterLogoSmall.png" translatesAutoresizingMaskIntoConstraints="NO" id="4Fq-Ge-5L3">
-                                <rect key="frame" x="0.0" y="42" width="320" height="230"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-T1-7LS" customClass="MCCustButton">
-                                <rect key="frame" x="39" y="296" width="243" height="47"/>
+                                <rect key="frame" x="39" y="267" width="243" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <state key="normal" title="Notifications">
@@ -33,7 +29,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-r9-PxG" customClass="MCCustButton">
-                                <rect key="frame" x="39" y="382" width="243" height="47"/>
+                                <rect key="frame" x="39" y="329" width="243" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <state key="normal" title="Subscribe">
@@ -42,6 +38,53 @@
                                 </state>
                                 <connections>
                                     <segue destination="aRh-EV-DdF" kind="push" id="6AN-Fq-0aJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Address Here" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="211" translatesAutoresizingMaskIntoConstraints="NO" id="61p-DG-OoQ">
+                                <rect key="frame" x="55" y="456" width="211" height="82"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.83673469389999999" green="0.76791258289999997" blue="0.0453110075" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hrJ-0K-71a">
+                                <rect key="frame" x="98" y="407" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Facebook_29x29.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openFacebook" destination="9uY-x2-Cds" eventType="touchUpInside" id="dro-QE-K8k"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fsI-e2-KeC">
+                                <rect key="frame" x="146" y="407" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="Twitter_29x29.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openTwitter" destination="9uY-x2-Cds" eventType="touchUpInside" id="Ckd-0q-yma"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ISy-zO-y3J">
+                                <rect key="frame" x="194" y="407" width="29" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="YouTube_29x29.png">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="openYouTube" destination="9uY-x2-Cds" eventType="touchUpInside" id="gM3-U1-Y6A"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VCh-05-3t9">
+                                <rect key="frame" x="55" y="44" width="211" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button" image="MooreCenterHD.jpg">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="showWebsite" destination="9uY-x2-Cds" eventType="touchUpInside" id="rZi-IJ-mwV"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,6 +97,7 @@
                     <navigationItem key="navigationItem" title="Moore Center" id="Mz8-mk-SXi" colorLabel="IBBuiltInLabel-Blue"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
+                        <outlet property="address" destination="61p-DG-OoQ" id="Bge-re-u3o"/>
                         <outlet property="notifBtn" destination="Y16-T1-7LS" id="MCG-9E-vSQ"/>
                         <outlet property="subscribeBtn" destination="xlp-r9-PxG" id="7ZB-We-Gqi"/>
                     </connections>
@@ -187,7 +231,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="MooreCenterLogoSmall.png" width="234" height="176"/>
+        <image name="Facebook_29x29.png" width="29" height="29"/>
+        <image name="MooreCenterHD.jpg" width="720" height="697"/>
+        <image name="Twitter_29x29.png" width="29" height="29"/>
+        <image name="YouTube_29x29.png" width="29" height="29"/>
     </resources>
     <color key="tintColor" red="0.14482761790000001" green="0.2627243024" blue="0.46195652170000001" alpha="1" colorSpace="calibratedRGB"/>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">

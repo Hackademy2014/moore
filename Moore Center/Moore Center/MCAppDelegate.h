@@ -11,5 +11,7 @@
 @interface MCAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
+@property (copy, nonatomic) NSString *phoneToken;
+@property (copy, nonatomic) NSString *oldPhoneToken;
 
 @end

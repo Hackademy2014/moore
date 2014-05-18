@@ -37,7 +37,7 @@
     self.notifTable.delegate = self;
     self.notifTable.dataSource = self;
 
-    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
 }
 
@@ -48,6 +48,8 @@
     
     [self.navigationController setNavigationBarHidden:NO];
     self.navigationController.navigationBar.backItem.title = @"Home";
+    
+    [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleDefault];
     
 }
 
