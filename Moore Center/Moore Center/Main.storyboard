@@ -23,7 +23,7 @@
                             <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y16-T1-7LS" customClass="MCCustButton">
                                 <rect key="frame" x="39" y="296" width="243" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
                                 <state key="normal" title="Notifications">
                                     <color key="titleColor" red="0.83673469387755106" green="0.76791258286254782" blue="0.045311007500855975" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
@@ -32,11 +32,11 @@
                                     <segue destination="LO9-M5-arz" kind="push" id="HL6-Mx-4Jg"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dQI-w5-B8e" customClass="MCCustButton">
-                                <rect key="frame" x="39" y="374" width="243" height="47"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xlp-r9-PxG" customClass="MCCustButton">
+                                <rect key="frame" x="39" y="382" width="243" height="47"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="TimesNewRomanPSMT" family="Times New Roman" pointSize="20"/>
-                                <state key="normal" title="Settings">
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                                <state key="normal" title="Subscribe">
                                     <color key="titleColor" red="0.83673469389999999" green="0.76791258289999997" blue="0.0453110075" alpha="1" colorSpace="calibratedRGB"/>
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
@@ -44,15 +44,15 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="Y16-T1-7LS" firstAttribute="width" secondItem="dQI-w5-B8e" secondAttribute="width" id="F2i-Sg-Xyc"/>
-                            <constraint firstItem="Y16-T1-7LS" firstAttribute="height" secondItem="dQI-w5-B8e" secondAttribute="height" id="loe-qg-9sj"/>
+                            <constraint firstItem="Y16-T1-7LS" firstAttribute="height" secondItem="xlp-r9-PxG" secondAttribute="height" id="Sg2-sE-ej1"/>
+                            <constraint firstItem="Y16-T1-7LS" firstAttribute="width" secondItem="xlp-r9-PxG" secondAttribute="width" id="kiB-MK-8Cd"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Moore Center" id="Mz8-mk-SXi" colorLabel="IBBuiltInLabel-Blue"/>
                     <nil key="simulatedTopBarMetrics"/>
                     <connections>
                         <outlet property="notifBtn" destination="Y16-T1-7LS" id="MCG-9E-vSQ"/>
-                        <outlet property="settingsBtn" destination="dQI-w5-B8e" id="dKj-YF-Duq"/>
+                        <outlet property="subscribeBtn" destination="xlp-r9-PxG" id="7ZB-We-Gqi"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="T3o-nA-HY0" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -45,6 +45,11 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)application:(UIApplication *)application didRegisterForRemoteNotificationsWithDeviceToken:(NSData *) token
+{
+    
+}
+
 /*
 #pragma mark - Navigation
 
