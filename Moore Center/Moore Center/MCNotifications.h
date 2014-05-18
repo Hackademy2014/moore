@@ -11,6 +11,6 @@
 @interface MCNotifications : UIViewController <UITableViewDelegate, UITableViewDataSource>
 
 @property (strong, nonatomic) IBOutlet UITableView* notifTable;
-@property (nonatomic, strong) NSMutableData *responseData;
+
 
 @end

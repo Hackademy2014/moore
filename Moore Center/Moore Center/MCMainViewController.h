@@ -12,5 +12,6 @@
 
 @property (nonatomic, strong) IBOutlet UIButton* notifBtn;
 @property (nonatomic, strong) IBOutlet UIButton* subscribeBtn;
+@property (nonatomic, strong) NSMutableData *responseData;
 
 @end

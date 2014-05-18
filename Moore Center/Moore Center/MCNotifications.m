@@ -9,12 +9,10 @@
 #import "MCNotifications.h"
 #import "MCNotifInstance.h"
 #import "MCNotificationCellTableViewCell.h"
+#import "MCHistory.h"
 
 @implementation MCNotifications
 
-NSArray *notifications;
-
-@synthesize responseData = _responseData;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,128 +36,20 @@ NSArray *notifications;
     
     self.notifTable.delegate = self;
     self.notifTable.dataSource = self;
+
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
 {
+    
     [super viewWillAppear:animated];
     
     [self.navigationController setNavigationBarHidden:NO];
     self.navigationController.navigationBar.backItem.title = @"Home";
     
-    NSLog(@"viewWillAppearCalled");
-    self.responseData = [NSMutableData data];
-    NSURLRequest *request = [NSURLRequest requestWithURL: [NSURL URLWithString:@"http://dev.leifnode.com/history.php"]];
-    [[NSURLConnection alloc] initWithRequest:request delegate:self];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
-{
-    NSLog(@"didReceiveResponse");
-    [self.responseData setLength:0];
-}
-
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
-    [self.responseData appendData:data];
-}
-
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
-    NSLog(@"didFailWithError");
-    NSLog([NSString stringWithFormat:@"Connection failed: %@", [error description]]);
-}
-
-- (void)connectionDidFinishLoading:(NSURLConnection *)connection {
-    NSLog(@"connectionDidFinishLoading");
-    NSLog(@"Succeeded! Received %d bytes of data",[self.responseData length]);
-    
-    // convert to JSON
-    NSError *myError = nil;
-    NSDictionary *results = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&myError];
-    
-    // show all values
-    /*for(id key in results) {
-        
-        id value = [results objectForKey:key];
-        
-        NSString *keyAsString = (NSString *)key;
-        NSString *valueAsString = (NSString *)value;
-        
-        NSLog(@"key: %@", keyAsString);
-        NSLog(@"value: %@", valueAsString);
-    }*/
-    
-    // extract specific value...
-    NSArray *notifications = [results objectForKey:@"notifications"];
-    NSMutableArray *store = [[NSMutableArray alloc] initWithCapacity:5];
-    
-    NSUInteger numNotifs = [notifications count];
-    NSLog(@"numN: %lul", (unsigned long)numNotifs);
-    NSUInteger counter = 0;
-    
-    //NSUserDefaults *sUD = [NSUserDefaults standardUserDefaults];
-    
-    //[sUD setInteger:numNotifs forKey:@"numNotifs"];
-    
-    for (NSDictionary *notification in notifications)
-    {
-        if ((numNotifs) > counter) {
-        
-            
-            NSString *subject = notification[@"subject"];
-            NSString *date = notification[@"date"];
-            NSString *desc = notification[@"content"];
-        
-            /*
-            NSLog(@"----");
-            NSLog(@"Title: %@", subject);
-            NSLog(@"Date: %@", date);
-            NSLog(@"Description: %@", desc);
-            NSLog(@"----");
-            */
-             
-            MCNotifInstance *current = [MCNotifInstance alloc];
-            current.title = subject;
-            current.date = date;
-            current.desc = desc;
-             
-            [store addObject:current];
-            
-            counter = counter + 1;
-            
-        } else {
-            // Do Nothing
-        }
-    }
-    
-    notifications = store;
-    
-    
-    /*[[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:store] forKey:@"currentNotifs"];
-    
-    NSData *data = [sUD objectForKey:@"currentNotifs"];
-    NSInteger numNotifs2 = [sUD integerForKey:@"numNotifs"];
-    NSInteger counter2 = 0;
-    NS
-    if (numNotifs2 > counter2) {
-        
-        MCNotifInstance *notif = array[counter2];
-        NSString *title2 = notif.title;
-        NSString *date2 = notif.date;
-        NSString *desc2 = notif.desc;
-        
-        NSLog(@"----");
-        NSLog(@"Title: %@", title2);
-        NSLog(@"Date: %@", date2);
-        NSLog(@"Description: %@", desc2);
-        NSLog(@"----");
-        
-        counter2 = counter2 + 1;
-
-    } else {
-        // Do nothing
-    }*/
-    
-}
 
 - (void)viewDidUnload {
     [super viewDidUnload];
@@ -172,7 +62,13 @@ NSArray *notifications;
 }
 
 - (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return 1;
+    
+    MCHistory *sharedHistory = [MCHistory sharedManager];
+    
+    sharedHistory.arrIndex = 0;
+    
+    return sharedHistory.numNotifs;
+    
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -185,11 +81,19 @@ NSArray *notifications;
     }
     cell.textLabel.text = @"Test";    //etc.
     cell.detailTextLabel.text = @"Today"; */
+    MCHistory *sharedHistory = [MCHistory sharedManager];
     
     static NSString *CellIdentifier = @"Cell";
     MCNotificationCellTableViewCell *cell = (MCNotificationCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    [cell.title setText:@"Test"];
+    NSUInteger ind = sharedHistory.arrIndex;
+    MCNotifInstance *current = sharedHistory.notifications[ind];
+    
+    cell.title.text = current.title;
+    cell.date.text = current.date;
+    cell.description.text = current.desc;
+    
+    sharedHistory.arrIndex++;
     
     return cell;
 }

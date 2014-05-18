@@ -15,6 +15,7 @@
 		75D280201927D79F00C7A24E /* MCNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2801F1927D79F00C7A24E /* MCNotifications.m */; };
 		75D280231927E70300C7A24E /* MCNotificationCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D280221927E70300C7A24E /* MCNotificationCellTableViewCell.m */; };
 		75D280261928412F00C7A24E /* MCNotifInstance.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D280251928412F00C7A24E /* MCNotifInstance.m */; };
+		75D2802D192883D700C7A24E /* MCHistory.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2802C192883D700C7A24E /* MCHistory.m */; };
 		75F278F8192689670082A7A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F7192689670082A7A9 /* Foundation.framework */; };
 		75F278FA192689670082A7A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278F9192689670082A7A9 /* CoreGraphics.framework */; };
 		75F278FC192689670082A7A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 75F278FB192689670082A7A9 /* UIKit.framework */; };
@@ -54,6 +55,8 @@
 		75D280221927E70300C7A24E /* MCNotificationCellTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNotificationCellTableViewCell.m; sourceTree = "<group>"; };
 		75D280241928412F00C7A24E /* MCNotifInstance.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNotifInstance.h; sourceTree = "<group>"; };
 		75D280251928412F00C7A24E /* MCNotifInstance.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCNotifInstance.m; sourceTree = "<group>"; };
+		75D2802B192883D700C7A24E /* MCHistory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCHistory.h; sourceTree = "<group>"; };
+		75D2802C192883D700C7A24E /* MCHistory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MCHistory.m; sourceTree = "<group>"; };
 		75F278F4192689670082A7A9 /* Moore Center.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Moore Center.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		75F278F7192689670082A7A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		75F278F9192689670082A7A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -144,6 +147,8 @@
 				75F27926192689A00082A7A9 /* Main.storyboard */,
 				75D2801E1927D79F00C7A24E /* MCNotifications.h */,
 				75D2801F1927D79F00C7A24E /* MCNotifications.m */,
+				75D2802B192883D700C7A24E /* MCHistory.h */,
+				75D2802C192883D700C7A24E /* MCHistory.m */,
 				75D280241928412F00C7A24E /* MCNotifInstance.h */,
 				75D280251928412F00C7A24E /* MCNotifInstance.m */,
 				75D280211927E70300C7A24E /* MCNotificationCellTableViewCell.h */,
@@ -288,6 +293,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75D2802D192883D700C7A24E /* MCHistory.m in Sources */,
 				75F2792A19268BAD0082A7A9 /* MCMainViewController.m in Sources */,
 				75D280201927D79F00C7A24E /* MCNotifications.m in Sources */,
 				75D280231927E70300C7A24E /* MCNotificationCellTableViewCell.m in Sources */,
