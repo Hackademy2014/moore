@@ -7,15 +7,12 @@
 //
 
 #import "MCNotifications.h"
+#import "MCNotifInstance.h"
 #import "MCNotificationCellTableViewCell.h"
 
-@interface MCNotifications ()
-
-@property (nonatomic, strong) NSMutableData *responseData;
-
-@end
-
 @implementation MCNotifications
+
+NSArray *notifications;
 
 @synthesize responseData = _responseData;
 
@@ -93,35 +90,74 @@
     
     // extract specific value...
     NSArray *notifications = [results objectForKey:@"notifications"];
+    NSMutableArray *store = [[NSMutableArray alloc] initWithCapacity:5];
     
     NSUInteger numNotifs = [notifications count];
+    NSLog(@"numN: %lul", (unsigned long)numNotifs);
     NSUInteger counter = 0;
     
+    //NSUserDefaults *sUD = [NSUserDefaults standardUserDefaults];
+    
+    //[sUD setInteger:numNotifs forKey:@"numNotifs"];
     
     for (NSDictionary *notification in notifications)
     {
-        if (numNotifs > counter) {
+        if ((numNotifs) > counter) {
         
+            
             NSString *subject = notification[@"subject"];
             NSString *date = notification[@"date"];
             NSString *desc = notification[@"content"];
         
+            /*
             NSLog(@"----");
             NSLog(@"Title: %@", subject);
             NSLog(@"Date: %@", date);
             NSLog(@"Description: %@", desc);
             NSLog(@"----");
+            */
+             
+            MCNotifInstance *current = [MCNotifInstance alloc];
+            current.title = subject;
+            current.date = date;
+            current.desc = desc;
+             
+            [store addObject:current];
             
-            
+            counter = counter + 1;
             
         } else {
             // Do Nothing
         }
-        
-        
-        //NSString *icon = [result objectForKey:@"icon"];
-        //NSLog(@"icon: %@", icon);
     }
+    
+    notifications = store;
+    
+    
+    /*[[NSUserDefaults standardUserDefaults] setObject:[NSKeyedArchiver archivedDataWithRootObject:store] forKey:@"currentNotifs"];
+    
+    NSData *data = [sUD objectForKey:@"currentNotifs"];
+    NSInteger numNotifs2 = [sUD integerForKey:@"numNotifs"];
+    NSInteger counter2 = 0;
+    NS
+    if (numNotifs2 > counter2) {
+        
+        MCNotifInstance *notif = array[counter2];
+        NSString *title2 = notif.title;
+        NSString *date2 = notif.date;
+        NSString *desc2 = notif.desc;
+        
+        NSLog(@"----");
+        NSLog(@"Title: %@", title2);
+        NSLog(@"Date: %@", date2);
+        NSLog(@"Description: %@", desc2);
+        NSLog(@"----");
+        
+        counter2 = counter2 + 1;
+
+    } else {
+        // Do nothing
+    }*/
     
 }
 

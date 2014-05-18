@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@interface MCNotifInstance : NSObject
+@interface MCNotifInstance : NSObject <NSCoding>
 
 @property (strong, nonatomic) NSString *title;
 @property (strong, nonatomic) NSString *date;
