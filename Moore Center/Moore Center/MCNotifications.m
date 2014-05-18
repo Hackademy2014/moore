@@ -38,6 +38,7 @@
     self.notifTable.dataSource = self;
 
     
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated
@@ -83,19 +84,31 @@
     cell.detailTextLabel.text = @"Today"; */
     MCHistory *sharedHistory = [MCHistory sharedManager];
     
+    [tableView setSeparatorInset:UIEdgeInsetsZero];
+    
     static NSString *CellIdentifier = @"Cell";
-    MCNotificationCellTableViewCell *cell = (MCNotificationCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    NSUInteger ind = sharedHistory.arrIndex;
-    MCNotifInstance *current = sharedHistory.notifications[ind];
+    if (sharedHistory.arrIndex < 5) {
+      
+        MCNotificationCellTableViewCell *cell = (MCNotificationCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
     
-    cell.title.text = current.title;
-    cell.date.text = current.date;
-    cell.description.text = current.desc;
+        NSUInteger ind = sharedHistory.arrIndex;
+        MCNotifInstance *current = sharedHistory.notifications[ind];
     
-    sharedHistory.arrIndex++;
+        cell.title.text = current.title;
+        cell.date.text = current.date;
+        cell.description.text = current.desc;
     
-    return cell;
+        sharedHistory.arrIndex++;
+    
+        return cell;
+        
+    } else {
+        MCNotificationCellTableViewCell *cell = (MCNotificationCellTableViewCell *) [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+        
+        return cell;
+    }
+    
 }
 
 /*

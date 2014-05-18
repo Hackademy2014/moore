@@ -26,40 +26,23 @@
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
     NSLog(@"didFailWithError");
-    NSLog([NSString stringWithFormat:@"Connection failed: %@", [error description]]);
+    NSLog([NSString stringWithFormat:@"Connection failed."]);
 }
 
 - (void)connectionDidFinishLoading:(NSURLConnection *)connection {
     NSLog(@"connectionDidFinishLoading");
-    NSLog(@"Succeeded! Received %d bytes of data",[self.responseData length]);
+    NSLog(@"Succeeded! Received %lul bytes of data",[self.responseData length]);
     
     // convert to JSON
     NSError *myError = nil;
     NSDictionary *results = [NSJSONSerialization JSONObjectWithData:self.responseData options:NSJSONReadingMutableLeaves error:&myError];
     
-    // show all values
-    /*for(id key in results) {
-     
-     id value = [results objectForKey:key];
-     
-     NSString *keyAsString = (NSString *)key;
-     NSString *valueAsString = (NSString *)value;
-     
-     NSLog(@"key: %@", keyAsString);
-     NSLog(@"value: %@", valueAsString);
-     }*/
-    
-    // extract specific value...
     MCHistory *sharedHistory = [MCHistory sharedManager];
     NSArray *notifications = [results objectForKey:@"notifications"];
     NSMutableArray *store = [[NSMutableArray alloc] init];
     
     sharedHistory.numNotifs = [notifications count];
     NSUInteger counter = 0;
-    
-    //NSUserDefaults *sUD = [NSUserDefaults standardUserDefaults];
-    
-    //[sUD setInteger:numNotifs forKey:@"numNotifs"];
     
     for (NSDictionary *notification in notifications)
     {
