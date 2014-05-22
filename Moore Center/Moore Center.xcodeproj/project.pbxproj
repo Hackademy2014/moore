@@ -11,6 +11,7 @@
 		7518ECCB192702EC002E1573 /* MooreCenterSplashSm.png in Resources */ = {isa = PBXBuildFile; fileRef = 7518ECCA192702EC002E1573 /* MooreCenterSplashSm.png */; };
 		7518ECCF1927A667002E1573 /* MCLogoSmallSharp.png in Resources */ = {isa = PBXBuildFile; fileRef = 7518ECCE1927A667002E1573 /* MCLogoSmallSharp.png */; };
 		7518ECDB1927AB00002E1573 /* MooreCenterLogoSmall.png in Resources */ = {isa = PBXBuildFile; fileRef = 7518ECDA1927AB00002E1573 /* MooreCenterLogoSmall.png */; };
+		759AC2691928BB0E0071BEC1 /* AppLogo.png in Resources */ = {isa = PBXBuildFile; fileRef = 759AC2681928BB0E0071BEC1 /* AppLogo.png */; };
 		75D2801D1927CB9A00C7A24E /* MCCustButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2801C1927CB9A00C7A24E /* MCCustButton.m */; };
 		75D280201927D79F00C7A24E /* MCNotifications.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D2801F1927D79F00C7A24E /* MCNotifications.m */; };
 		75D280231927E70300C7A24E /* MCNotificationCellTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 75D280221927E70300C7A24E /* MCNotificationCellTableViewCell.m */; };
@@ -53,6 +54,7 @@
 		7518ECCA192702EC002E1573 /* MooreCenterSplashSm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MooreCenterSplashSm.png; sourceTree = "<group>"; };
 		7518ECCE1927A667002E1573 /* MCLogoSmallSharp.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MCLogoSmallSharp.png; sourceTree = "<group>"; };
 		7518ECDA1927AB00002E1573 /* MooreCenterLogoSmall.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MooreCenterLogoSmall.png; sourceTree = "<group>"; };
+		759AC2681928BB0E0071BEC1 /* AppLogo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = AppLogo.png; path = ../../../Downloads/AppLogo.png; sourceTree = "<group>"; };
 		75D2801B1927CB9A00C7A24E /* MCCustButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = MCCustButton.h; path = ../MCCustButton.h; sourceTree = "<group>"; };
 		75D2801C1927CB9A00C7A24E /* MCCustButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = MCCustButton.m; path = ../MCCustButton.m; sourceTree = "<group>"; };
 		75D2801E1927D79F00C7A24E /* MCNotifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MCNotifications.h; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 		75F278FD192689670082A7A9 /* Moore Center */ = {
 			isa = PBXGroup;
 			children = (
+				759AC2681928BB0E0071BEC1 /* AppLogo.png */,
 				75D2803F1928AA9900C7A24E /* MCBG.png */,
 				75D2803D1928A59D00C7A24E /* MooreCenterHD.jpg */,
 				75D280321928A35700C7A24E /* YouTube_29x29.png */,
@@ -293,6 +296,7 @@
 				75D280381928A35800C7A24E /* YouTube_29x29.png in Resources */,
 				75F27927192689A00082A7A9 /* Main.storyboard in Resources */,
 				7518ECDB1927AB00002E1573 /* MooreCenterLogoSmall.png in Resources */,
+				759AC2691928BB0E0071BEC1 /* AppLogo.png in Resources */,
 				75F27902192689670082A7A9 /* InfoPlist.strings in Resources */,
 				7518ECC91926FBC1002E1573 /* MooreCenterSplash.png in Resources */,
 				75D2803B1928A35800C7A24E /* Facebook_29x29.png in Resources */,

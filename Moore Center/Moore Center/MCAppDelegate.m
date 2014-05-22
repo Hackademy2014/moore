@@ -88,25 +88,17 @@
     {
         [self postAddRequest];
     }
-    
-    
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"Got key!"
-                                                    message:@"You must be connected to the internet to use this app."
-                                                   delegate:nil
-                                          cancelButtonTitle:@"OK"
-                                          otherButtonTitles:nil];
-    [alert show];
 }
 
 - (void)application:(UIApplication*)application didFailToRegisterForRemoteNotificationsWithError:(NSError*)error
 {
 	NSLog(@"Failed to get token, error: %@", error);
-    UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
+    /*UIAlertView *alert = [[UIAlertView alloc] initWithTitle:@"No network connection"
                                                     message:@"You must be connected to the internet to use this app."
                                                    delegate:nil
                                           cancelButtonTitle:@"OK"
                                           otherButtonTitles:nil];
-    [alert show];
+    [alert show];*/
 }
 
 @end
